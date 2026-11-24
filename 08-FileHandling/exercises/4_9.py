@@ -5,7 +5,7 @@ import csv
 print('GRAPHIC DESIGNERS')
 print('=================')
 
-with open('it_company.csv', newline='') as file:
+with open('it_company.csv') as file:
     # DictReader reads every row as a dictionary: the keys are the column names from the first line
     reader = csv.DictReader(file)
     for row in reader:
