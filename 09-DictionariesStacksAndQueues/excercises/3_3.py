@@ -20,7 +20,10 @@ def brackets_ok(expression):
             # a closing bracket needs an opening one on the top of the stack
             if stack.empty():
                 return False
+            
             opening = stack.get()
+            # Check whether current char (key) points to the matching opening bracket (value), e.g.:
+            # KEY: ')' -> VALUE: '(' -> pairs[')'] == '(
             if opening != pairs[char]:
                 return False
         # all other characters are skipped
