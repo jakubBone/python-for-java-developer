@@ -4,7 +4,7 @@ import re
 
 text = input('Enter text: ')
 
-# [aeiouAEIOU] matches one vowel; findall() returns the list of all matches
+# [aeiouAEIOU] matches one vowel (PL samogłoski); findall() returns the list of all matches
 vowels = re.findall(r'[aeiouAEIOU]', text)
 
 print('Number of vowels:', len(vowels))
