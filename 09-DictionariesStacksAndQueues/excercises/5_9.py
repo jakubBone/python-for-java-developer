@@ -17,7 +17,7 @@ with open('province.csv', 'r', encoding='utf-8', newline='') as file:
 others = 0
 with open('vehicle.txt') as file:
     for line in file:
-        number = line.strip()
+        number = line.strip() # remove first and last whitespace (spaces, tabs, newlines)
         if number == '':
             continue
         first_letter = number[0]

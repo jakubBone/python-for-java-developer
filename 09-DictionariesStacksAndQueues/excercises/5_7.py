@@ -27,7 +27,7 @@ def avg_price(hotels):
     total = 0
     for hotel in hotels:
         total += hotel["price"]
-    # round() with one argument returns an integer (half values are rounded to the nearest even number)
+    # round() with one argument returns an integer (half values are rounded to the nearest even (PL parzysta) number)
     return round(total / len(hotels))
 
 
