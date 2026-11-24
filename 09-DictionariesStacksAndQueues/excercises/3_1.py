@@ -3,6 +3,7 @@
 import queue
 
 # a stack: the last element put is the first one taken (LIFO)
+# create an instance objectof LifoQueue class
 stack = queue.LifoQueue()
 
 for number in (2, 3, 7, 4, 1, 9, 8):
