@@ -39,6 +39,6 @@ def main():
         save_books(file_name, selected)
         print(f'{genre}: {len(selected)} books saved to {file_name}')
 
-
+# Run main() only when this file is executed directly (not when imported as a module
 if __name__ == "__main__":
     main()

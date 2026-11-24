@@ -2,7 +2,8 @@
 
 import csv
 
-with open('clothing.csv', newline='') as file:
+with open('clothing.csv') as file:
+    # DictReader reads every row as a dictionary: the keys are the column names from the first line
     reader = csv.DictReader(file)
     for row in reader:
         # the values read from a file are texts, so they are converted to numbers
